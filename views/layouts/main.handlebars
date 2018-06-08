@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>THRASHER KNEE SCRAPER</title>
+</head>
+
+<body>
+	<header>
+		<a href="/"><div id="sitename">KNEE SCRAPER</div></a>
+		<a href="/"><button id="all-articles">ALL ARTICLES</button></a>
+		<a href="/saved"><button id="saved-articles">SAVED ARTICLES</button></a>
+		<form action="/scrape" method="GET">
+			<button type="submit" id="refresh-articles">SCRAPE NEW ARTICLES</button>
+		</form>
+		<form action="/search" method="POST">
+			<button type="submit" id="search-submit">SEARCH</button>
+			<input type="text" name="search" placeholder="Search for articles" id="search-input">
+		</form>
+	</header>
+	<img id="cover" src="/assets/images/cover.jpg">
+	<div id="container">
+		{{{ body }}}
+	</div>
+
+	<script src="/assets/javascript/app.js"></script>
+
+	<div id="addnote">
+		<div id="note-displayer">
+			<h2>NOTE</h2>
+			<h3>ARTICLE: <span id="article-title"></span></h3>
+			<div id="note">
+				<label for="note-title">TITLE</label><br>
+				<input type="text" placeholder="Title" name="title" id="note-title"><br>
+				<label for="note-body">NOTE</label><br>
+				<textarea rows="7" placeholder="Note" id="note-body"></textarea><br>
+				<button type="submit" id="add-note">SAVE NOTE</button>
+				<button type="button" id="close-note">CANCEL</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
