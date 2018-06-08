@@ -115,14 +115,14 @@ header button {
 .story-body button {
 	display: inline;
 	min-width: 128px;
-	background-color: #77b9fd;
+	background-color: #d05632;
 	color: #fff;
 	font-weight: bold;
 	font-size: 22px;
 }
 
 .story-body button:hover {
-	background-color: #aed4fb;
+	background-color: #d05632;
 	box-shadow: 0 0 10px #fff;
 }
 
@@ -131,6 +131,7 @@ header button {
 	width: 80%;
 	padding: 0px 20px;
 	color: white;
+	background-color: black;
 }
 
 .story-body img {
@@ -194,7 +195,7 @@ header button {
 
 #note-displayer button {
 	min-width: 128px;
-	background-color: #77b9fd;
+	background-color: #d05632;
 	color: #fff;
 	font-weight: bold;
 	font-size: 20px;
@@ -203,7 +204,7 @@ header button {
 }
 
 #note-displayer button:hover {
-	background-color: #aed4fb;
+	background-color: #d05632;
 	box-shadow: 0 0 10px #fff;
 }
 
