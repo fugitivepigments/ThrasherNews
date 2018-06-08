@@ -41,7 +41,7 @@ var port = process.env.PORT || 3000;
 app.use(logger("dev"));
 app.use(express.static("public"));
 app.use(body.urlencoded({
-  extended: false
+  extended: true
 }));
 app.use(method("_method"));
 app.engine("handlebars", exphbs({
