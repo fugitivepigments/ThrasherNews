@@ -77,7 +77,7 @@ app.get("/scrape", function(req, res) {
   request("http://www.thrashermagazine.com/", function(error, response, html) {
     var $ = cheerio.load(html);
     var result = {};
-    $("div.featured-content").each(function(i, element) {
+    $("div.featured-content li").each(function(i, element) {
       var link = $(element).find("a").attr("href");
       var title = $(element).find("h4").text().trim();
       var summary = $(element).find("div.post-description").text().trim();
